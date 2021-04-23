@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Support World</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="assets/img/SupportWorld.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+	<header class="full-width NavBarP">
+		<div class="full-width NavBarP-Logo">SuporrtWorld</div>
+		<nav class="full-width NavBarP-Nav">
+			<ul class="full-width list-unstyled">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#!">Quienes Somos</a></li>
+				<li><a href="cita.html">Contactos</a></li>
+				<li><a href="#!">Acerca de</a></li>
+				<li>
+					<a href="#!" class="btn-login"><i class="fa fa-user" aria-hidden="true"></i> Log In</a>
+					<div class="full-width Login">
+						<p class="text-center">
+							<form action="">
+								<div class="form-group">
+									<label for="email"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</label>
+									<input type="text" class="form-control" name="email" id="email">
+								</div>
+								<div class="form-group">
+									<label for="password"><i class="fa fa-lock" aria-hidden="true"></i> Contraseña</label>
+									<input type="text" class="form-control" name="password" id="password">
+								</div>
+								<a href="#!">No recuerdo mi contraseña</a>
+								<br>
+								<p class="text-center">
+									<a href="#!" class="btn btn-danger btn-login" style="display:inline-block !important;">CANCELAR</a>
+									<button type="submit" class="btn btn-primary">INICIAR SESIÓN</button>
+								</p>
+							</form>
+							<hr>
+							<p class="text-center">¿Aún no tienes cuenta?</p>
+							<a href="#!">CRÉATE UNA GRATIS</a>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<i class="fa fa-bars visible-xs btn-menuMobile ShowMenuMobile" aria-hidden="true"></i>
+	</header>
+<br>
+<br>
+<br>
+<br>
+<section class="form_wrap">
+
+    <section class="cantact_info">
+        <section class="info_title">
+            <span class="fa fa-user-circle" ></span>
+            <h2>INFORMACION<br>DE CONTACTO</h2>
+        </section>
+        <section class="info_items">
+            <p><span class="fa fa-envelope"></span> info.contact@gmail.com</p>
+            <p><span class="fa fa-mobile"></span> +1(585) 902-8665</p>
+        </section>
+    </section>
+
+    <form action="enviar.php" method="post" class="form_contact">
+        <h2>Envia un mensaje</h2>
+        <div class="user_info">
+            <label for="names">Nombres *</label>
+            <input type="text" id="names" name="nombre" required>
+
+            <label for="phone">Telefono / Celular</label>
+            <input type="text" id="phone" name="telefono">
+
+            <label for="email">Correo electronico *</label>
+            <input type="text" id="email" name="correo" required>
+
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <input type="submit" value="Enviar Mensaje" id="btnSend">
+        </div>
+    </form>
+
+</section>
+
+</body>
+</html>
